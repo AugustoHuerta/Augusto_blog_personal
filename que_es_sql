@@ -1,0 +1,118 @@
+¿Alguna vez has escuhado las palbras query, select, join, group by, etc pero nunca has entendido su significado?
+
+Esto se acaba aquí. Este blog post propone hacer pasar esas cosas extrañas que suenan extraño o que solo las personas más técnicas consiguen entender a tus mejores amigos.
+
+Pasaremos que veas estas palabras como magía arcana a tus amigos del día a día en tu trabajo.
+
+Pero primero. ¿Por qué son importantes en ciencias de datos? ¿Qué significan cada una?
+
+Día a día como futuro data scientist te vas a encontrar la necesidad de obtener datos que están "ocultos" o "enfrascados" en la bases de datos y la única forma de acceder a estos es mediante las consultas (De ahí el Q de Query) adecuados a las bases de datos.
+
+Estas consultas deberán estar estructuradas con ciertas reglas y cierta forma para que la base de datos (Desde ahora BS) lo entienda y no te traiga cualquier otra cosa.
+
+De ahí la S y L en SQL, que significan structure (Estructura) y language (lenguaje) respectivamente.
+
+¿Cómo funciona?
+
+Ayudemosnos de un viejo conocido: Excel.
+
+Mira esta spreadsheets:
+
+-- IMAGEN DE UNA TABLA SE EXCEL --
+
+Igual que en excel, a estos datos organizados los llamamos tabla. Una tabla de datos.
+
+En este caso nuestra tabla se llamará vendedores
+
+Si tu jefe te pidiera: "Obtén los datos de las 15 vendedors con mayores ventas este mes" probablemente tu instinto te diria ordenar los datos en base a las ventas y copiar las 15 primeras personas.
+
+¿Fácil no? Ahora hagamoslo a la manera SQL.
+
+Primera sentencia SELECT y FROM
+
+SELECT es la palabra clave que le dice a al BS de que columnas obtener los datos.
+
+Ejemplo. Si dijieramos: 'SELECT nombres', la BS te traería solo los datos de esta columna. Quedaría así:
+
+--- Imagen de solo esta columna ---
+
+¿Pero cómo decirle a la base de datos que te refieres a esta tabla y no a otra como por ejemplo 'ejecutivos'?
+
+Para esto acompañamos la SELECT con FROM, así: 'SELECT nombres FROM vendedores'
+
+------ Sigue esta corriente de pensamiento: Perfecto te dice tu jefe, ahora quiero obtener TODOS los datos de los vendedores, necesitamos hacer un reporte ejecutivo.
+
+En este caso podrías hacer 2 cosas: escribir cada nombre de cada columna en tu select (Que no es muy recomendable para los dedos) o usar un pequeño atajo:
+
+SELECT * FROM vendedores
+
+En este caso el '*' le dice a la BS que obtenga todos los datos de todas las columnas de esa tabla.
+
+Le entregas el reporte a tu jefe y el asiente, genial 'Ahora quiero solo los datos de los vendedores menores a 25 años, los jóvenes son el futuro, veamos sus resultados'
+
+Vas a tu asiento y epa! te acuerdas de tu tercer amigo: WHERE
+
+Esta palabra clave que le dice a la BS que filtre los datos en base a una condición.
+
+¿Cómo cuál? Por ejemplo, que obtenga solo los datos de los vendedores que son menores a 25 años.
+
+Este sería el query: SELECT * FROM vendedores WHERE años<25;
+
+Genial, ya tienes caasii todo para concinar tu primer query interesante, solo falta 2 ingredientes: ORDER BY y LIMIT
+
+Como su nombre exhibe, ORDER BY sirve para ordenar los datos de tu consulta y LIMIT para limitar cuántos datos quieres que se muestren.
+
+Ejemplo: Si quisieramos obtener los 15 primeros vendedores con mejores ventas del mes haríamos lo siguiente:
+
+SELECT * FROM vendedores ORDER BY ventas_mes LIMIT 15
+
+Esto te entregaría la siguiente tabla:
+
+---Imagen tabla---
+
+Si quisieramos obtener los últimos 15 vendedores solo le tenemos que especfíciar al query que los ordene de manera ascendente (ASC) or descendente (DESC) que es el predeterminado.
+
+Así:
+
+SELECT * FROM vendedores ORDER BY ventas_mes DESC LIMIT 15.
+
+Resultado:
+
+--- Imagen tabla ---
+
+Cómo toda receta, tiene un orden, no puedes hacer tallarines sin primero hervir agua no?.
+
+Estas palabras claves deben de ir en este orden: SELECT, FROM, ORDER BY, WHERE, LIMIT. De hacerlo en más que comida, te saldrán errores.
+
+Wuala! Ahora si estamos tenemos los ingredientes para cocinar tu primer gran query:
+
+Te encuentras en tu restaurante próspero de queries llamado (SEQUEL APETIT), viene un comensal y te realiza el siguiente pedido:
+
+'He oído que tienes la tabla vendedores, me gustaría obtener los datos de las 10 vendedores con mayores a 21 años y con mejores ventas este mes Eso sí, solo sus nombres, apellidos y número de ventas'.
+
+Uh. Que pedido. Manos a la obra chef. ;D
+
+(Nota: Existe un secreto para el aprendizaje y es intentar y caerse. Te reto a que antes de ver la solución al problema lo intentes realizar tu mismo, así refuerzas lo aprendido. No temas equivocarte.)
+
+Después mover las manos en tus útensilios de cocina, (Teclado y mouse) cocinas su query de esta manera:
+
+SELECT * FROM vendedores WHERE edad>21 ORDER BY ventas_mes DESC LIMIT 15
+
+Entregas la información resultante de este query y ves como un cliente satisfecho consume tu informaicón.
+
+Felicidades! Bon Apetit.
+
+Uh, pero ahora aparece un cliente con otro pedido, dice que le ha encantado tu trabajo pero quiere otro pedido que pide el uso de JOINS y GROUP BY.
+
+¿Te gustaría conocer como Pedro lográ solucionar este pedido? Acompañalo en el siguiente blog post:
+
+¿Qué y cómo funcionan los GROUP BY y JOINS en SQL?
+
+Por el momento es todo de mi parte. Soy Augusto Huerta, estudiante de ciencias de datos, me puedes encontrar en mi página personal y linkedin:.
+
+
+
+
+
+
+
