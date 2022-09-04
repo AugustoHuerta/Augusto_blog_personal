@@ -1,12 +1,23 @@
-¿Alguna vez has escuhado los términos query, select, join, etc pero nunca entendido su significado?
+¿Alguna vez has escuchado los términos QUERY, SELECT, LIMIT, ORDER BY, etc,  pero nunca entendido su significado?
 
-Eso termina aquí. Hoy te propongo convertir estas palabras misteriosas y extrañas en, sorpresa, tus mejores amigos.
+Eso acaba aquí. Hoy te propongo convertir estas palabras misteriosas en, adivina, tus mejores amigos.
 
-En este blog post te enseñaré qué necesitas saber y cómo puedes crear tu primer gran query.
+En este blog post te enseñaré:
+- El significado de estas palabras y su uso
+- Qué es SQL y cuál es su importancia en el análisis de datos.
+- Qué y cómo operan los motores de bases de datos.
+- Las reglas básicas para crear un query.
+- La fuente de información núcleo: La tabla.
 
-Pero antes que nada. ¿Por qué son importantes saberlas? ¿De dónde salen?
+No te preocupes si no tienes experiencia con estos conceptos, cubriré todo lo qué necesitas saber desde la A hasta la Z.
 
-Día a día científicos de datos se encuentran con la necesidad buscar información oculta o escondida en las empresas y, en la mayoría de casos, la única forma de acceder a esta es mediante las consultas a las bases de datos.
+Solo mantén la mente abierta y con ganas de aprender. ;D
+
+¡Empezemos!
+
+SQL what?: ¿Qué es y cuál es su importancia?
+
+Día a día los científicos de datos necesitan encontrar información precisa en las empresas que, en la mayoría de casos, su única forma de acceso es a tráves de consultas a las bases de datos.
 
 Estas consultas (o en inglés queries) deberán estar estructuradas de cierta forma para que la base de datos (Desde ahora BS) las entienda y no traiga cualquier otra cosa.
 
@@ -97,7 +108,7 @@ OUTPUT: --TABLEE.
 
 En este caso los queremos filtrar por años, por lo que el query sería: 'SELECT * FROM vendedores WHERE años<25;'
 
-INPUT: 'SELECT * FROM vendedores WHERE pais='peru''
+INPUT: 'SELECT * FROM vendedores WHERE años<25;'
 
 OUTPUT: --TABLEE.
 
@@ -107,7 +118,7 @@ Genial, faltan 1 hora para acabar la jornada laboral y ya estás alistandote par
 
 'Me gustaría obtener los datos de las 10 vendedores con mayores a 21 años y con mejores ventas este mes Eso sí, solo sus nombres, apellidos y número de ventas'
 
-Uh. El día no acaba. ¿No? Mejor acabar cuánto antes.
+Uh. El día no acaba. ¿No? Mejor terminar cuánto antes.
 
 Organiza y vencerás: LIMIT y ORDER BY:
 
@@ -155,3 +166,11 @@ Y la verdad es que tienes razón, son las funciones más importantes que te vall
 Te invito a revisar el siguiente post que los explica y continua tu aventura de recién contratado: ¿Qué son y cómo funcionan los GROUP BY y JOINS en SQL?
 
 Por el momento es todo de mi parte. Soy Augusto Huerta, estudiante de ciencias de datos y amante de los videojuegos y libros, me puedes encontrar en mi página personal y linkedin:.
+
+---------------------------
+Link del blog= https://augustohuerta.com/que-es-sql/
+- Ver una manera para poder poner las etiquetas de párrafos en los blog posts.
+- Ver el tema de una vez de los datos que voy a utilizar para hacer los queries.
+-- Comprobbar lo queries porsupuesto.
+-- Poner imagenes de bases de datos o gifs para mantener atención.
+- Recuerda que tienes una responsabilidad con el tema de los anuncios de FB
