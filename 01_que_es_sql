@@ -1,169 +1,182 @@
 ¿Alguna vez has escuchado los términos QUERY, SELECT, LIMIT, ORDER BY, etc,  pero nunca entendido su significado?
 
-Eso acaba aquí. Hoy te propongo convertir estas palabras misteriosas en, adivina, tus mejores amigos.
+Eso acaba aquí. Hoy convertiremos estas palabras misteriosas en, adivina, tus mejores amigos.
 
-En este blog post te enseñaré:
-- El significado de estas palabras y su uso
+En síntesis en este post aprenderás:
 - Qué es SQL y cuál es su importancia en el análisis de datos.
-- Qué y cómo operan los motores de bases de datos.
-- Las reglas básicas para crear un query.
-- La fuente de información núcleo: La tabla.
+- Qué son y cómo operan los motores de bases de datos.
+- La estrella de las bases de datos: La tabla.
+- La estructura básica de un query.
 
-No te preocupes si no tienes experiencia con estos conceptos, cubriré todo lo qué necesitas saber desde la A hasta la Z.
+No te preocupes si no tienes experiencia previa con estos conceptos, aprenderemos desde lo más básico.
 
-Solo mantén la mente abierta y con ganas de aprender. ;D
+Y, sorpresa ;D, al final de este artículo podrás crear tu primer gran query.
 
 ¡Empezemos!
 
-SQL what?: ¿Qué es y cuál es su importancia?
+/t- SQL: ¿Qué es y cuál es su importancia?
 
-Día a día los científicos de datos necesitan encontrar información precisa en las empresas que, en la mayoría de casos, su única forma de acceso es a tráves de consultas a las bases de datos.
+Día a día los científicos de datos necesitan encontrar información precisa que, en la mayoría de casos, solo se puede acceder a tráves de consultas (en inglés queries) a las bases de datos.
 
-Estas consultas (o en inglés queries) deberán estar estructuradas de cierta forma para que la base de datos (Desde ahora BS) las entienda y no traiga cualquier otra cosa.
+Estas deben seguir un orden y estructura preciso, esto para que la base de datos (Desde ahora BS) las entienda y no de errores.
 
-De aquí sale SQL (Structured query language), el lenguaje universal para hacer consultas a las bases de datos.
+De ahí el acrónimo SQL (Structured query language), que en español significa lenguaje de consultas estructurado, o en cristiano: el lenguaje universal para consultar a las bases de datos.
 
 ¿Cómo funciona?
 
 Mira la siguiente imagen.
 
--- IMAGEN DE UNA TABLA SE EXCEL --
+-- IMAGEN DE LA TABLA VENDEDORES -- CAP: Una tabla SQL.
 
-Estos datos organizados son una tabla, la estructura principal de una base de datos.
+Estos datos organizados son una tabla, la estructura principal de la mayoría de bases de datosj.
 
-Todas las tablas tienen nombres que las ayudan a diferenciarse unas de otras, esta de aquí la llamaremos 'vendedores'.
+Igual que una hoja de cáculo, todas las tablas deben tener nombres únicos que las diferencie.
 
-Si has manejado Excel seguro te parecerá muy similar a una hoja de cálculo cualquiera.
+Como esta habla de vendedores la llamaremos 'vendedores1'.
 
-Y en lo más básico, lo es, pero con características especiales.
+¿Qué las diferencia de una tabla en un archivo Excel? Bueno, varias cosas:
+
+--- Creación de una tabla de comparación entre archivo excel y una tabla de bases ded datos relacionales-------------
 
 Las tabla:
 
 - Pueden soportar hasta miles de millones de datos.
 - Solo trabajan con lenguaje SQL
-- Son más rápidas que...
+- Son más rápidas que
+- Se almacenan en un motor de bases de datos. vs se almacenan en una hoja de cálculo.
 
-La última característica es la más fundamental, porque el motor de bases de datos es el programa que almacena toda la data que la empresa ha recolectado.
+---------------------
 
-Podríamos decir que el motor de bases de datos es el edificio y las tablas y datos los materiales y objetos guardados en él. Estos pueden ser grandes o pequeños, optimizados para rápidez o seguridad, con extensión o funciones especiales, entre otras cosas.
+La última diferencia es la más importante, ya que el motor de bases de datos (O MBS para abreviar) es el principal actor del show.
 
-De ahí que exista una gran variedad de ellos. Están Postgresql, mysql, MS SQL, etc. Cada uno con su respectivo diferencial.
+Podríamos decir que el MBS es como un almacen especial, en vez de materiales y objetos, guardan datos y tablas.
 
-Pero, nada de esto importa para lo que estamos aquí. Es hora de crear tu primer gran query.
+Estos almacenes pueden ser grandes o pequeños, optimizados para objetivos específicos (Como rápidez o seguridad), con o sin extensiones, entre otras características.
 
-/t Tu primera sentencia: SELECT y FROM
+De ahí la existencia de una gran variedad de ellos. Como ejemplos están Postgresql, mysql, MS SQL, etc. Cada uno con su respectivo diferencial.
 
-Imágina que es tu primer día como científico de datos en una gran compañia, abres tu email y te encuentras con esto:
+Pero, siendo francos, ellos no importan ahora. Es hora de crear tu primer gran query.
 
-'Buenos días. Porfavor enviar todos los datos de los vendedores registrados en Postgres urgente, hasta las 9:30 a. m. Atte. Tu jefe.'
+/t - Tu primera sentencia: SELECT y FROM
 
-Utilizar SELECT y FROM es la clave aquí. Estas son palabras clave SQL que le dicen al a BS de qué tabla obtener los datos y cuáles datos elegir y cuáles no.
+Es lunes por la mañana. !Felicidades! Es tu primer día como científico de datos en Marketing.SAC, un conglomerado de call centers.
 
-Ejemplo: Usando la tabla 'vendedores' podemos hacer el siguiente querie: 'SELECT nombres FROM vendedores'.
+Son las 8 a. m, abres tu email y te encuentras con un email del Jefe de Marketing:
 
-En este caso la tabla te traería solo los datos de la columna nombres.
+'Buenos días. Porfavor enviame los nombres, apellidos y edades de los vendedores registrados en Postgres. Necesitamos hacer un análisis de colaboradores urgente. Lo espero hasta las 9:30 a. m.'
 
-INPUT: 'SELECT nombres FROM vendedores'.
+Vaya inicio, pero nada que no se pueda manejar. Abres la base de datos en tu computadora y te acuerdas que la tabla 'vendedores' contiene toda la información necesaria.
 
-OUTPUT: --- Imagen de solo esta columna ---
+- Imagen referencial.
 
+Utilizar SELECT y FROM es la clave aquí. Ambas son palabras SQL que le dicen a la BS de qué tabla obtener la información y cuáles columnas mostrar y cuáles no.
 
-Si tu jefe te pidiera: "Obtén los datos de las 15 vendedors con mayores ventas este mes" probablemente tu instinto te diria ordenar los datos en base a las ventas y copiar las 15 primeras personas.
+Ejemplo: Como no sabemos cómo es la tabla, sería buena idea mostrarla toda.
 
-¿Fácil no? Ahora hagamoslo a la manera SQL.
+INPUT: 'SELECT * FROM vendedores;'
 
-Primera sentencia SELECT y FROM
+OUTPUT: --- Imagen de toda la tabla ---
 
-SELECT es la palabra clave que le dice a al BS de que columnas obtener los datos.
+Genial pero nosotros solo queremos obtener los nombres, apellidos y edades. En este caso notamos que estos datos están en las columnas 'edades1', 'names01' y 'apellidos'.
 
-Ejemplo. Si dijieramos: 'SELECT nombres', la BS te traería solo los datos de esta columna. Quedaría así:
+Podemos realizar el siguiente query para mostrar solo estas columnas: 'SELECT edades1, names01, apellidos FROM vendedores;'
 
---- Imagen de solo esta columna ---
-
-Genial, pero tu no quieres solo los nombres sino todos los datos de todas las columnas.
-
-Para esto existe un pequeño atajo: El *.
-
-INPUT: 'SELECT * FROM vendedores'.
+INPUT: 'SELECT edades1, names01, apellidos FROM vendedores;'
 
 OUTPUT: --- Imagen de solo esta columna ---
 
-En este caso el '*' le dice a el motor de base de datos (MB desde ahora) que obtenga los datos de cada columnas de 'vendedores'.
+Como te puedes dar cuenta, SELECT sirve para seleccionar, quien lo diría, las columnas que quieres mostrar de la tabla. Si quisieramos obtener todas las columnas, podemos poner un '*' en vez de escribir el nombre de cada una.
 
-Listo!, después de pasar la información a un excel envías el reporte al jefe.
+FROM solo le dice a la base de datos de qué tabla obtener la información. Si pusieramos 'usuarios' en vez de 'vendedores', adivina de que grupo enviariamos la info.
 
-Hastaaaa que te llega la respuesta....
+¡Listo! Pasas la información a un reporte de Excel y lo envías.
 
-'Bien. Ahora quiero solo los datos de los vendedores menores a 25 años. Los jóvenes son el futuro, veamos sus resultados'
+/t - ¿Dónde está WHERE?
 
-/t ¿Dónde está WHERE?
+Todo es paz y tranquilidad hasta que vez un email del vicepresidente de ventas:
 
-WHERE es 2 cosas: Tu mejor amigo aquí y la palabra clave que filtra los datos en base a una condición.
+'Bienvenido a la compañia. Necesitamos los datos de los vendedores menores a 25 años. Los jóvenes son el futuro y queremos ver sus resultados'
 
-Ejemplo: Si quisieramos obtener los datos de solo los vendedores peruanos pondríamos 'WHERE pais='Peru'' al costado de FROM.
+WHERE es 2 cosas aquí: Tu mejor amigo y la palabra clave que filtra los datos en base a una condición.
 
-INPUT: 'SELECT * FROM vendedores WHERE pais='peru''
+Igual que el primero, WHERE está allí dónde más lo necesitas.
+
+Como ahora. (Emoji)
+
+Ejemplo: Si quisieramos obtener los datos de solo los vendedores peruanos, ponemos 'WHERE pais='Peru'' al costado de FROM. Así:
+
+INPUT: 'SELECT * FROM vendedores WHERE pais='peru';'
 
 OUTPUT: --TABLEE.
 
-En este caso los queremos filtrar por años, por lo que el query sería: 'SELECT * FROM vendedores WHERE años<25;'
+En este caso queremos filtrar por años, de modo que sería: 'SELECT * FROM vendedores WHERE años<25;'
 
 INPUT: 'SELECT * FROM vendedores WHERE años<25;'
 
 OUTPUT: --TABLEE.
 
-Te invito a pensar cómo sería si quisieras obtener solo los datos númericos. -Añadir micro reto una vez obtenida la data--
+Genial. Justo toca hora de almuerzo. Envias la información y vas por un café.
 
-Genial, faltan 1 hora para acabar la jornada laboral y ya estás alistandote para salir. Eso hasta que el VP de ventas también te envía un correo.
+/t - Organiza y vencerás: LIMIT y ORDER BY:
 
-'Me gustaría obtener los datos de las 10 vendedores con mayores a 21 años y con mejores ventas este mes Eso sí, solo sus nombres, apellidos y número de ventas'
+Regresas y notas otro email, pero esta vez del mismo CEO de la empresa. ¿Qué buscará?
 
-Uh. El día no acaba. ¿No? Mejor terminar cuánto antes.
+'Buenas tardes. Hoy es la ceremonia de progreso para los 10 mejores vendedores menores a 21 años. Se les debe de dar su bono y ascenso antes de acabar el turno laboral. Porfavor enviarme sus identificadores, edades y número de ventas.'
 
-Organiza y vencerás: LIMIT y ORDER BY:
+En este caso necesitaremos de LIMIT y ORDER BY. Como se puede llegar a inferir, la primera es para limitar el número de datos mostrados y la segunda para ordenarlos en base a un criterio.
 
-
-LIMIT es la palabra clave que, sorpresa, limita el número de datos de la tabla.
-
-Si quisieramos solo los datos de 10 personas en vez de todos, esta sería nuestra consulta: 'SELECT * FROM vendedores LIMIT 10'
+Ejemplo de LIMIT: Si quisieramos los datos de solo 10 personas, esta sería nuestra consulta:
 
 INPUT: 'SELECT * FROM vendedores LIMIT 10'
 
 OUTPUT: --TABLEE.
 
-ORDER BY es para ordenar los datos en base a una columna.
-
-De menor a mayor, de A a la Z, de Z a la A, etc, dependiendo de la columna que elijas.
-
-Ejemplo: Ordenar los vendedores en base a sus ventas: 'SELECT * FROM vendedores ORDER BY ventas DESC'
-
-La palabra DESC es opcional, determina si quieres ver los datos de manera descendente. De manera ascendente sería ASC.
+Ejemplo de ORDER BY: Ordenadr los datos en base al número de ventas de manera descendente.
 
 INPUT: 'SELECT * FROM vendedores ORDER BY ventas DESC'
 
 OUTPUT: --TABLEE.
 
-Orden es la clave.
+Ahora de manera ascendente:
 
-Ahora, te tengo que contar un secreto, hasta ahora hemos visto las palabras por separado. Pero para que funcionen juntas (Y para que el query no tenga errores) deben en ir en un orden especial.
+Ejemplo de ORDER BY: Ordenar los datos en base al número de ventas de manera descendente.
 
-Este orden: SELECT, FROM, ORDER BY, WHERE, LIMIT. De hacerlo en más que comida, te saldrán errores.
+INPUT: 'SELECT * FROM vendedores ORDER BY ventas ASC'
 
-Con esto por fin terminas de escribir el siguiente y el último query. Valla primer día tan productivo!
+OUTPUT: --TABLEE.
 
-(Nota: Existe un secreto para el aprendizaje y es intentar y caerse. Te reto a que antes de ver la solución al email lo intentes realizar tu mismo, así refuerzas lo aprendido. No temas equivocarte.)
+Las palabras ASC y DESC son opcionales. ¿Qué sucede si no ponemos ninguna? Por defecto se ordenará de manera descendente.
 
-INPUT: SELECT * FROM vendedores WHERE edad>21 ORDER BY ventas_mes DESC LIMIT 10
+/t - La ';' y el orden. Final de temporada.
+
+Te tengo que contar un secreto: hasta ahora hemos visto las keyword por separado. pero para que funcionen juntas (Y no salgan errores) deben estar en un orden especial. Además de, casi, siempre finalizar con un ';'.
+
+Este es su orden:
+1) SELECT, 
+2)FROM, 
+3) ORDER BY, 
+4) WHERE, 
+5) LIMIT.
+
+Tal vez no te parezca el mejor secreto jamás contado, pero evitará dolores para ti y tus dedos.
+
+Con esto por fin estamos listos para escribir el siguiente y último query. ¡Valla primer día!
+
+(Nota: Existe un truco para el aprendizaje: Intentar y fallar. La mente aprende más al tratar y equivocarse que de no tratar para nada. Te reto a encontrar el input de este email por ti mismo. Nadie nace experto, no temas equivocarte.)
+
+¿Listo? Este es:
+
+INPUT: SELECT * FROM vendedores WHERE edad>21 ORDER BY ventas_mes DESC LIMIT 10;
 
 OUTPUT: Tablee
 
-Felicidades! Lograste aprender que es SQL y crear tu primer gran query.
+¡Felicidades! Lograste aprender que es SQL, crear tu primer gran query y culminar tu primer día en Marketing.SAC.
 
-Puede que te preguntes: ¿Pero que hay con eso de los JOINS o Group BY? ¿No son importantes también?
+Puede que te preguntes ¿Pero que hay de los JOINS o GROUP BY? ¿No los vamos a ver?
 
-Y la verdad es que tienes razón, son las funciones más importantes que te vallas encontrar al hacer consultas. Pero son un poco más amplias de explicar y abarcan conceptos matemáticos.
+Y la verdad es que: No. Estas sí son funciones importantes del día a día, pero a la vez abarcan conceptos matemáticos un poco más complejos.
 
-Te invito a revisar el siguiente post que los explica y continua tu aventura de recién contratado: ¿Qué son y cómo funcionan los GROUP BY y JOINS en SQL?
+Te invito a revisar el siguiente post de esta seríe sobre SQL: ¿Qué son y cómo funcionan los GROUP BY y JOINS en SQL?
 
 Por el momento es todo de mi parte. Soy Augusto Huerta, estudiante de ciencias de datos y amante de los videojuegos y libros, me puedes encontrar en mi página personal y linkedin:.
 
@@ -174,3 +187,4 @@ Link del blog= https://augustohuerta.com/que-es-sql/
 -- Comprobbar lo queries porsupuesto.
 -- Poner imagenes de bases de datos o gifs para mantener atención.
 - Recuerda que tienes una responsabilidad con el tema de los anuncios de FB
+- Ver donde poner primero el concepto de key word
