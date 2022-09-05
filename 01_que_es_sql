@@ -8,11 +8,11 @@ En síntesis en este post aprenderás:
 - La estrella del show: La tabla.
 - La estructura básica de un query.
 
-No te preocupes si no tienes experiencia previa con estos conceptos, aprenderemos desde lo más básico.
+No te preocupes si no tienes experiencia previa con estos conceptos, aprenderemos desde lo más fundamental.
 
-Y, sorpresa ;D, al final de este artículo podrás crear tu primer gran query.
+Y, sorpresa ;D, al final de este artículo crearemos tu primer gran query.
 
-¡Empezemos!
+¡Empecemos!
 
 /t- SQL: ¿Qué es y cuál es su importancia?
 
@@ -188,9 +188,4 @@ Y la verdad es que: No. Estas sí son funciones importantes del día a día, per
 
 Te invito a revisar el siguiente post de esta seríe sobre SQL: ¿Qué son y cómo funcionan los GROUP BY y JOINS en SQL?
 
-Por el momento es todo de mi parte. Soy Augusto Huerta, estudiante de ciencias de datos y amante de los videojuegos y libros, me puedes encontrar en mi página personal y linkedin:.
-
----------------------------
-Link del blog= https://augustohuerta.com/que-es-sql/
-- Como nota final está que añadi una mención al tema de limpieza de datos xD.
-- Recuerda que tienes una responsabilidad con el tema de los anuncios de FB
+Por el momento es todo de mi parte. Soy Augusto Huerta, estudiante de ciencias de datos, amante de los RTS y libros. Me puedes encontrar en mi página personal  y linkedin.
