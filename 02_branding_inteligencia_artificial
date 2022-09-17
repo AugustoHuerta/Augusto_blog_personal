@@ -118,19 +118,83 @@ Vamos, que de todo hay un poco. Un científico de datos si le preguntas que es i
 
 .---- Imagen Nicole Cage en Superman Caption: ¿No hay algo que no cuadra? Este es un DeepFake, un fenómeno que usa inteligencia artificial para el reconocimiento y cambio facial.----
 
-Pero, para no sobreextendernos, nos enfocaremos en los avances más importantes que sobrepasaron la capacidad humana:
+Pero, para no sobreextendernos, nos enfocaremos en los avances más importantes que sobrepasaron la capacidad humana y su importancia con el tema que nos acompaña: (Mejorar esta transición)
 
 - Maquina derrota al humano: Garry Kasparov pierde contra DeepBlue.
+
+-------- Foto del deep blue vs Kasparov con el hombre asombrado ----
 
 El trabajo en la rama de I.A había empezado ya hace tiempo (Siendo fundada como disciplina acádemica desde 1956 (Referencia https://www.routledge.com/Artificial-Intelligence-Business-and-Civilization-Our-Fate-Made-in-Machines/Kaplan/p/book/9781032155319)) pero la primera bomba de su potencial sucedió en el verano de 1997. El campeón del mundo, Garry Kaspartov, perdió 3½–2½ contra la computadora de IBM.
 
 Ahora, hablar de las técnicas de I.As utilizadas en esta computadora sería, nula, ya que DeepBlue se centró cerca del 100% en cálculo de fuerza bruta, nada de inteligencia de por medio. Sin embargo, este match representa la primera vista de lo que pronto se volvería a repetir en 2016.
 
-- Maquina gana creativamente al mejor creativo de la historia: AlphaGo versus Lee Sedol
+- Maquina destroza a humano en el juego más difícil del mundo: Go.
+
+Go es un juego de tablero con reglas muy simples:tienes 2 colores, capturas las piezas del enemigo rodeandolas y el que obtiene el mayor espacio gana. ¿Nada fuera de otro mundo no?
+
+Error. Jugar Go requiere pensamiento estrátegico, creatividad y hasta instinto de parte de los profesionales más top. ¿Cómo así? Sucede que con estas simples reglas y un tablero de 15:14 existen más partidas de Go que atómos en el universo. (Sí, así de complejo).
+
+Casi 20 años después del match de Kasparov y DeepBLue sale una de las noticias más importantes de nuestro siglo, Lee Sedol, jugador profesional entre el top 10 de los mejores del mundo, pierde la última esperanza de la humanidad de vencer contra las computadoras contra AlphaGo, y no por 1 partida como su homónimo del ajedrez, pierde por destrozo total un 4-1 contra el modelo de DeepMind.
+
+A diferencia de DeepBlue, AlphaZero sí utiliza técnicas de inteligencia artificial como redes neuronales y aprendizaje reforzado, siendo esta victoria el pilar base del documental (PONER EL DOCUMENTAL AQUI), y, ahora sí, el potencial de la inteligencia artificial como reemplazo de cerebros humanos.
+
+--- Foto de Lee Sedol con cara de WHATTTT?-----
+
+
+- ¿Made by humans or by machines?: Reemplazando trabajo humano con Github Copilot, GPT 3 y GLIDE.
+
+Pasaron muchos avances después del anterior evento en muchos frentes, DeepMind se enfoco en hacer sus modelos grandmasters en StarCraft 2 (Un RTS complicado de jugar a nivel profesional), empezaron a salir en voga los transformers y los CNN (Convulutional networks), etc, etc. Sin embargo el penúltimo paso en la carrera contra el humano se distingue por 3 modelos revolucionarios.
+
+# G.P.T 3. ¿Esto es humano?
+
+GPT 3 es un modelo de inteligencia artificla en la rama de procesamiento del lenguaje natural, es decir hablar, replicar y predecir conversaciones humanas mediante el texto, todo con el apoyo de transformers (Técnica avanzada de procesamiento del lenguaje).
+
+Esta I.A es alimentada con todo el texto de internet y funciona de esta manera: Le das un texto base y le pides que lo expanda, lo resuma o te diga lo que quieras.
+
+-- Foto de GPT 3 dando un resumen: 
+
+Lo que la hace remarcable que su predecesora es que tiene unos rendimientos superiores al promedio, tu le pides que te genere poesía, artículos periódiscos, que expanda, etc y no solo lo genera, puedes llegar a pensar que este texto esta realizado por humanos y no inteligencia artifical. Es tán potente que puede llegar a incluso aprender a programar o redactar como un escritor junior.
+
+-- Foto de GPT 3 Programando:
+
+Si te gustan los retos, te invito adivinar que párrafo de esta sección fue escrita por GPT 3. Lo detallaré al final del artículo. Pero por el momento continuemos.
+
+# Github copilot. Se gradua el primer ingenieros no humano.
+
+Desarrollada por la misma empresa con colaboración de Microsoft, Github Copylot es un derivado de GPT 3 pero enfocada a generación de código.
+
+¿Cuál es su importancia en todo este meollo? Es nuestro primer punto de referencia de I.As que pueden reemplazar o automatizar trabajo humano creativo aparte de escribir, programar.
+
+Aunque muchas personas no técnicas o con el título de, 'creativos', piensen diferente, programar es una tarea que requiere imaginación e inventiva. Como un ex copywriter yo mismo, puedo decir que es igual o incluso más difícil que redacción publicitaria o de contenidos. Las razones son muchas y las puedes encontrar aquí. (Haz link de referencia a mi blog post)
+
+Dejando de lado opiniones personales (Aunque verdaderas, jaja), lo que sí es verdad es junto con la siguiente I.A, estas empezaron a dar una luz de lo que iba a venir.
+
+# GLIDE: Marketero en el 2024: ¿Photoshop? ¿Acaso esa herramienta no murió?
+
+Llegamos a la penúltima escalonada de la escalera. GLIDE: El modelo de I.A que puede retocar fotos sin photoshop.
+
+Esta I.A desarrollada por, sorpresa, OpenAI, tiene la peculiaridad que le puedes pedir agregar, cambiar o elementos de una foto y, luego de 3 a 5 cambios, tener una pieza de contenido totalmente distinta.
+
+Mira este ejemplo: Empezamo
+
+-- El demo del cambio de sofa ----
+
+Todos estos cambios instántanemente, respetando el contexto de la imagen y en base a lo que le digas a la maquina. Este es el resultado de una unión entre el campo de procesamiento natural (Que vimos con Github Copylot y GPT 3) y el campo de los modelos generativos de contenido realista.
+
+Creo que a partir de aquí ya se pueden ver las implicancias que podrían tener en las carreras de diseño gráfico estas herramientas.
+
+Pero las innovaciones no acaban allí, y es que falta aún el toque especial que lo cambia todo...
+
+# Adios diseñador. Hola científico de datos: Stabble Diffusion y DALL-E 3:
+
+Hasta ahora hemos abordado varios temas, pero aún falta lo importante.
 
 
 
--------- Foto del deep blue vs Kasparov con el hombre asombrado ----
+
+# Pensamientos finales: Implicancias y futuro del branding.
+
+
 
 
 
