@@ -161,6 +161,8 @@ Pasaron muchos avances después del anterior evento en muchos frentes, DeepMind 
 
 GPT 3 es un modelo de inteligencia artificla en la rama de procesamiento del lenguaje natural, es decir hablar, replicar y predecir conversaciones humanas mediante el texto, todo con el apoyo de transformers (Técnica avanzada de procesamiento del lenguaje).
 
+¿Qué arquitectura de modelo usa? ¿Qué diferencial trae a la mesa este modelo? Transformes.
+
 Esta I.A es alimentada con todo el texto de internet y funciona de esta manera: Le das un texto base y le pides que lo expanda, lo resuma o te diga lo que quieras.
 
 -- Foto de GPT 3 dando un resumen: 
@@ -177,13 +179,19 @@ Desarrollada por la misma empresa con colaboración de Microsoft, Github Copylot
 
 ¿Cuál es su importancia en todo este meollo? Es nuestro primer punto de referencia de I.As que pueden reemplazar o automatizar trabajo humano creativo aparte de escribir, programar.
 
-Aunque muchas personas no técnicas o con el título de, 'creativos', piensen diferente, programar es una tarea que requiere imaginación e inventiva. Como un ex copywriter yo mismo, puedo decir que es igual o incluso más difícil que redacción publicitaria o de contenidos. Las razones son muchas y las puedes encontrar aquí. (Haz link de referencia a mi blog post)
+¿Se diferencia su arquitectura de modelo de GPT 3? Podríamos decir que no. Lo que más resalta de este proyecto del anterior es que GPT 3, aunque novedoso, no resultaba una amenaza profesional.
+
+Sí, GPT 3 puede escribir pero, como podemos ver en este video (Jaime Altozano, uso una IA para escribir un nuevo capítulo de Harry Potter), su nivel de escritura se asemeja más a un adolescente que a un redactor profesional. 
+
+En cambio, en el mundo del código, Github Copylot si representa un impacto mayor ya que programar no requiere un manejo excelente de narración o desarrollo de personajes, ya que no se necesitan. El diferencial de un programador es su capacidad creativa de encontrar una solución óptima a problemas trasladados en código, lo que justamente hace esta I.A.
+
+Aunque muchas personas no técnicas o con el título de, 'creativos', puedan pensar diferente, programar es una tarea que requiere imaginación e inventiva. Como un ex copywriter yo mismo, puedo decir que es igual o incluso más difícil que redactar contenidos publicitarios. Las razones son muchas y las puedes encontrar aquí. (Haz link de referencia a mi blog post)
 
 Dejando de lado opiniones personales (Aunque verdaderas, jaja), lo que sí es verdad es junto con la siguiente I.A, estas empezaron a dar una luz de lo que iba a venir.
 
 # GLIDE: Marketero en el 2024: ¿Photoshop? ¿Acaso esa herramienta no murió?
 
-Llegamos a la penúltima escalonada de la escalera. GLIDE: El modelo de I.A que puede retocar fotos sin photoshop.
+Llegamos a la penúltima escalonada: GLIDE. El modelo de I.A que puede retocar fotos sin photoshop.
 
 Esta I.A desarrollada por, sorpresa, OpenAI, tiene la peculiaridad que le puedes pedir agregar, cambiar o elementos de una foto y, luego de 3 a 5 cambios, tener una pieza de contenido totalmente distinta.
 
@@ -191,20 +199,109 @@ Mira este ejemplo: Empezamo
 
 -- El demo del cambio de sofa ----
 
-Todos estos cambios instántanemente, respetando el contexto de la imagen y en base a lo que le digas a la maquina. Este es el resultado de una unión entre el campo de procesamiento natural (Que vimos con Github Copylot y GPT 3) y el campo de los modelos generativos de contenido realista.
+Todos estos cambios casi instántanemente, respetando el contexto de la imagen y loo que le hayas dicho a la maquina. Este es el resultado de una unión entre el campo de procesamiento natural (Que vimos con Github Copylot y GPT 3) y el campo de los modelos generativos de contenido realista.
 
-Creo que a partir de aquí ya se pueden ver las implicancias que podrían tener en las carreras de diseño gráfico estas herramientas.
+¿Qué innovación trajo a la mesa? Métodos de difusión, unión de dos campos de la inteligencia artificial antes desconectados, aplicación práctica a tareas diarias de profesionales de Photoshop.
+
+Creo que a partir de aquí ya se pueden ver las implicancias que podrían tener en las carreras de diseño (Ya sea gráfico, de interiores o UI/UX) estas herramientas.
 
 Pero las innovaciones no acaban allí, y es que falta aún el toque especial que lo cambia todo...
 
-# Adios diseñador. Hola científico de datos: Stabble Diffusion y DALL-E 3:
+# Adios diseñador. Hola científico de datos: Stabble Diffusion y DALL-E 2:
 
-Hasta ahora hemos abordado varios temas, pero aún falta lo importante.
+Hasta ahora hemos abordado todos los temas y avances previos que tuvimos en esta materia. ¿Importantes? Sí. Pero en 2022 estalló la bomba que cambio todo: Salió DALL-E 2 (Referencia a su paper)
+
+Para no adentrarnos en los detalles técnicos (No es el objetivo de este post), digamos que este modelo toma todos los avances de sus predecesores y los lleva a un siguiente nivel. Ahora ya no se trata de sí la I.A puede escribir o reemplazar imágenes, hablamos de que desde solo texto nos cree un trabajo al nivel de un diseñador gráfico mid-level en cuestión de segundos.
+
+Ejemplos: Explicar la demo de DALL - E 2 (Poner las imágenes de la demo)
+
+Lo que llevaba tardes y horas de trabajo para un ilustrador, fotográfo o diseñador se va reduce a 1 solo programa al costo de 3 céntavos de dólar por imágen. (Referencia al post de OPEN AI de su costo)
+
+Estimando que este tipo de imágenes mínimo llegan a 1 hora, el salario mínimo es de 1025 soles en Perú por 192 horas mensuales y realizando el tipo de cambio de doláres a soles actual (Septiembre de 2022) es de 3.84. Podemos llegar a la conclusión que el trabajo de DALL-E 2 tiene hasta un 98% de reducción de costo de mano de obra.
+
+Y lo mejor es no solo eso, es que este modelo genera imágenes originales propias. No copia y pega de un banco de imágenes, las genera desde cero en base a patrones encontrados en otras imágenes similares. Por lo tanto no tienen copyright de por sí.
+
+Por el momento DALL-E 2 tiene limitaciones. Esta prohibido al uso de imágenes de famosos, contenido violento o considerado adulto, entre otros para evitar que se usen para crear montajes falsos. Además que no abierta para su uso en todo el mundo. (Países como Perú no tienen acceso a ella)
+
+-- Imagen de mi tratando de ingresar a Dall E 2---
+
+Pero, y es cuando ingresa nuestra segunda protagonista, Stablle Diffusion sí permite esto. Permite realizar imágenes con famosos y está abierta al todo el público (Que lo sepa usar claro xD).
+
+-- Imagenes de Emma stone Stablle difussion Créditos Dot CSV----
+
+Con estas características:
+- Costos de producción reducido al 98% con una calidad diseñador gráfico mid-level.
+- Tiempos de creación casi instántaneos.
+- Proyectos Open Source (Abiertos a todo el público)
+- Modelos que pueden usar fotos de famosos o figuras públicas.
+- Generación de imágenes sin Copyright.
+
+Podemos decir que la Inteligencia Artificial ha entrado en el mundo del marketing y branding ya no solo en términos de experiencia de usuario (Referencia papers con el tema de experiencia de usuario) como podemos ver en estos papers y en el caso de las recomendaciones de Netflix. Si no ha penetrado en el apartado más profundo de creación de contenido, y con esto, en lo que antes considerabamos solo capaz de ser hecho por humanos.
+
+# Pensamientos finales: Implicancias y futuro en branding y Marketing.
+
+Llegado a este punto toca pensar en las implicancias que tiene esta tecnología en el Marketing y Branding, existen muchas preguntas e inquietudes que puede provocar estos avances y daré mi opinión personal de lo que sucederá:
+
+¿Esta I.A quitará el trabajo a los diseñadores?
+
+Repuesta corta: Sí y no. Respuesta larga: Es más complicado.
+
+No se puede el tiempo de producción de contenidos de estos modelos está fuera de la capacidad de humana (No se puede competir contra segundos de producción), sin embargo la calidad de diseñadores gráficos profesionales top aún no ha sido destronada del todo.
+
+--- Poner la referencia de 'Can AI Replace Our Graphic Designer?' ----
+
+Como se puede apreciar, DALL-E 2 aún tiene un montón de 'habilidad' que alcanzar si quiere competir contra grandes profesionales. En un trabajo donde la calidad se valor más que la cantidad podemos decir que aún tenemos las ventajas como humanos.
+
+Pero el tema llega cuando no requerimos este nivel de trabajos, cuando con un nivel intermedio-bajo podemos estar okey y felices de pagar centávos de dolár antes que contratar a un profesional full time. Al final muchas organizaciones medianas y pequeñas buscan algo con las 3 bs: Bonito, Bueno y Barato, por lo que la oferta de DALL -E 2 les resultaría más atractiva que tener a una persona en planilla.
+
+Y el tema no acaba aquí. En 2019, según cifras de la Enaho, las micro y pequeñas empresas representan el 95% de las empresas peruanas y emplean al 47.7% de la población ecónomica activa (Contando solo las empresas formales). La pregunta entonces sale, ¿Acaso los recién graduados de carreras 'creativa' (Ilustración, diseño gráfico, comunicación y audiovisuales) podrían no tener empleo al cual aplicar?
+
+¿Acaso las empresas con el 47.7% empleadora de la PEA dejarían de buscar estos profesionales? Yo creo que sí va a pasar mientras más público y accesibles se vuelvan estas tecnologías a la población hispanoablante.
+
+Esto repercutiría en bajar el rango salarial de profesionales junior o de nivel intermedio y aumentar el Skill floor (El nivel de habilidad mínima para ser considerado profesional) de estos egresados para ser considerados 'contratables'.
+
+Lo más probable es que la manera normal de hacer diseño gráfico cambie, a lo mejor podemos generar nuestras propias imágenes como proyectos base o inspiración y empezar a mejorar el pedido en base a ellas.
+
+¿Cuál es el limite de las computadoras?
+
+Como pudimos ver en anterior apartado, estas tecnologías aún están lejos de llegar a un nivel profesional top, sin embargo sus usos ya están afectando a la industria del branding.
+
+- Imagen caso este: Este organización proclama crear un logo en menos de 3 minutos. Con inteligencia aritficial
+
+Y aunque la calidad sea menor, estas tecnologías no generan 1 imagen a la vez, podrían llegar hasta generar 15 imágenes o más totalmente diferentes instantaneamente.
+
+Listo, debemos de dejar nuestros trabajos y empezar a estudiar matemáticas, estadísticas y programación para empezar a ser científicos de datos y crear nuestros propios modelos, ya que esta es la única solución. ¿No? JAJAJA No, aún es prematuro decir que seremos reemplazdos.
+
+Sim embargo la insersión de estas tecnologías en las producciones audiovisuales (Sea entretenimiento o publicitarias) va a ser una realidad que entrará con o sin nuestra aprobación. Podríamos compara el ingreso de estas tecnologías como fue el uso de CGI en las producciones de hoy día, primero como una innovación y luego como una herramienta o técnica común.
+
+Y sobretodo, tener por seguro que estás tecnologías solo harán más que mejorar, no podemos predecir lo que implicará DALL-E 3 o Stablle Diffusion 2 o lo que sea que venga, pero si podremos decir que será más rápido, con mejor calidad y con menor precio.
+
+¿Qué hacer ahora?
+
+Hemos llegado un momento en el mundo donde una moneda artificial vale más que un carro y dónde las computadoras amenezan con, por lo menos, cambiar nuestros trabajos como los conocemos. Para prosperar en él ya no vale delegar cualquier trabajo ligado a computadoras al 'chico de I.T', es hora de involucrarnos más que nunca con cómo funciona la tecnología por dentro, cómo estos modelos se crean, que conocimientos hay detrás para que esto se ejecute.
+
+El centrarnos en nuestra carrera y olvidarnos de las profesiones tecnologícas ya no es una estrategia válida, como tampoco es parar de mejorar y engrandecer nuestros conocimientos.
+
+Ni tampoco es válido al réves, solo centrarnos en conocer programar por programar y olvidar que se realiza código para obtener resultados, no por el gusto de programar.
+
+Es hora de aprender más sobre tecnología en el sector de publicidad y Branding: Cuáles son los fundamentos de una computadora, de qué se componen, de qué están compuestos los pixeles, etc para poder adaptarse a los cambios que se avecinan y prósperar en ellos.
+
+Como también sucede al réves, ahora los científicos de datos deben entender cómo sus modelos los pueden poner a escala, cómo pueden ayudar a agilizar la producción en otras ramas, qué agencias o negocios se pueden crear en base a ello.
+
+Si siempre has tenido miedo a las matemáticas, seas 'creativo' o ingeniero, ya no hay excusa para no empezar a aprenderlas.
+
+Ha llegado la hora de dejar la indeferencia entre las ramas del conocimientos y comenzar a ensanchar más nuestro conocimiento vertical sin descuidar nuestro perfeccionamiento de nuestras habilidades si queremos desempeñarnos en los trabajos del futuro.
+
+Notas finales:
+
+Si te preguntabas, NO, ningún paŕrafo fue generado por GPT 3. Pero haste la pregunta. ¿Creías que fue alguno? Creo que ya has notado de lo que estas noticias implican.
+
+Me gustaria escuchar tu opinión y punto de vista de esta revolución. Dejalo en la caja de comentarios. ;D
 
 
 
 
-# Pensamientos finales: Implicancias y futuro del branding.
+
 
 
 
